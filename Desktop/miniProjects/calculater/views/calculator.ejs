@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="theme-switch">
+                <i class="fas fa-sun fa-lg"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon fa-lg"></i>
+            </div>
+
+            <div class="display">
+                <div class="history-display" id="history"></div>
+                <div class="current-display" id="display">0</div>
+            </div>
+
+            <div class="keypad">
+                <div class="memory-buttons">
+                    <button class="btn memory" data-action="mc"><i class="fas fa-archive"></i><br/>MC</button>
+                    <button class="btn memory" data-action="mr"><i class="fas fa-redo"></i><br/>MR</button>
+                    <button class="btn memory" data-action="m+"><i class="fas fa-plus"></i> M+</button>
+                    <button class="btn memory" data-action="m-"><i class="fas fa-minus"></i> M-</button>
+                </div>
+
+                <div class="scientific-buttons">
+                    <button class="btn scientific" data-action="sin">sin</button>
+                    <button class="btn scientific" data-action="cos">cos</button>
+                    <button class="btn scientific" data-action="tan">tan</button>
+                    <button class="btn scientific" data-action="sqrt"><i class="fas fa-square-root-alt"></i></button>
+                </div>
+
+                <div class="main-buttons">
+                    <button class="btn clear" data-action="clear">C</button>
+                    <button class="btn operator" data-action="backspace"><i class="fas fa-backspace"></i></button>
+                    <button class="btn operator" data-action="%">%</button>
+                    <button class="btn operator" data-action="/">÷</button>
+
+                    <button class="btn number" data-action="7">7</button>
+                    <button class="btn number" data-action="8">8</button>
+                    <button class="btn number" data-action="9">9</button>
+                    <button class="btn operator" data-action="*">×</button>
+
+                    <button class="btn number" data-action="4">4</button>
+                    <button class="btn number" data-action="5">5</button>
+                    <button class="btn number" data-action="6">6</button>
+                    <button class="btn operator" data-action="-">-</button>
+
+                    <button class="btn number" data-action="1">1</button>
+                    <button class="btn number" data-action="2">2</button>
+                    <button class="btn number" data-action="3">3</button>
+                    <button class="btn operator" data-action="+">+</button>
+
+                    <button class="btn number" data-action="0">0</button>
+                    <button class="btn number" data-action=".">.</button>
+                    <button class="btn operator" data-action="^">x<sup>y</sup></button>
+                    <button class="btn equals" data-action="=">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/Calculator.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html> 
